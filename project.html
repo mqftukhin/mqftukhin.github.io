@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mqftukhin</title>
+  <link href="https://fonts.cdnfonts.com/css/bonheur-royale" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 900
+      },
+      hide: {
+        effect: "blind",
+        duration: 900
+      }
+    });
+ 
+    $( "#opener" ).on( "click", function() {
+
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
+  </script>
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/bonheur-royale');
+    body {
+      background-color: #000;
+      align-items: center;
+      justify-content: center;
+      color: #fff; 
+    }
+    .container {
+      background-color:#000;
+      display: grid;
+      grid-template-rows: repeat(3,1f);
+      margin: 10%;
+      height: 20vh;
+      align-items: center;
+      justify-content: center;
+    }
+    #dialog {
+      text-align: center;
+    }
+    button#opener {
+      background-color: #000;
+      color: #fff;
+      height: fit-content;
+      width: fit-content;
+      border: none;
+      font-family: 'Segoe Script', sans-serif;     
+    }
+    h1 {
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="dialog" title="WELLCOME TO">
+      <p>BLACK MIRROR</p>
+    </div>
+    <button id="opener"><h1>mqftukhin</h1></button>
+  </div>
+</body>
+</html>

@@ -3,271 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>mqftukhin</title>
+    <link href="https://fonts.cdnfonts.com/css/bonheur-royale" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/kay-pho-du" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        @import url('https://fonts.cdnfonts.com/css/bonheur-royale');
+        @import url('https://fonts.cdnfonts.com/css/kay-pho-du');
         body {
-            background-color : var(--maincolor);
-            --maincolor : #fff ;
-            --secondcolor : #111 ;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Belah Kiri */
-        .container1 {
-            height: 100vh;
-            width: 40vw;
-            position: fixed;
-            display: grid;
-            grid-template-rows: 5em 1fr 1fr;
-            padding: 2em;
-        }
-
-        ul {
-            justify-self: center;
-        }
-        ul li {
-            list-style: none;
-            display: inline;
-
-        }
-        ul li a {
-            color: var(--secondcolor);
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: .2em;
-        }
-        ul li a:hover {
-            font-weight: bolder;
-        }
-        .container1 h1 {
-            color: var(--secondcolor);
-            align-self: center;
-            font-style: italic;
-        }
-        .icon {
-            justify-self: center;
-            list-style: none;
-            display: inline;
-        }
-        i {
-            padding: .5em;
-        }
-        .icon a {
-            color: var(--secondcolor);
-        }
-
-        /* Belah Kanan */
-        .container2 {
-            position: relative;
-            width: 60vw;
-            padding-left: 1em;
-            float: right;
-        }
-
-
-        /* Belah Kanan Home */
-        section {
-            color: var(--secondcolor);
-            height: 100vh;
-            width: 100%;
-            padding: 1em;
-        }
-        #about{
-            height: 150vh;
-        }
-        /* .card1 {
-            display: grid;
-            grid-template-columns: repeat(2,1 fr);
-        }
-        .card1 img {
-            width: 250px;
-        }
-        .card1 p{
-            position: relative;
-            top: -13em ;
             background-color: #fff;
-            left: 9em;
-            width: 264px ;
-            text-align: justify;
-            box-shadow: 2px 2px 8px grey ;
-            padding: 1em;
-            max-height: 144px ;
-            min-height: 144px ;
-        } */
-        .card1 {
-            display: grid;
-            justify-content: start;
+            font-family: 'Kay Pho Du', sans-serif;
+            display: flex;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #000;
         }
-        .card1 img{
-            width: 250px;
-        }
-        .card1 p {
-            background-color: var(--maincolor);
-            color: var(--secondcolor);
-            box-shadow: 2px 2px 8px grey ;
-            width: 284px;
-            padding: 1em;
-            position: absolute;
-            left: 15em;
-            transform: translateY(5em);
-            text-align: justify;
-        }
-
-        .card2 {
-            display: grid;
-            justify-content: end;
-        }
-        .card2 img{
-            width: 250px;
-        }
-        .card2 p {
-            background-color: var(--maincolor);
-            color: var(--secondcolor);
-            box-shadow: 2px 2px 8px grey ;
-            width: 284px;
-            padding: 1em;
-            position: absolute;
-            right: 14.5em;
-            transform: translateY(5em);
-            text-align: justify;
-        }
-        #home p {
-            width: 35vw;
-            text-align: justify;
-        }
-
-        button.btn-darkmode {
-            background-color: var(--secondcolor);
-            color : var(--maincolor) ;
-            font-style: italic;   
-            height: 2em;
-            width: 2em;
-            position: fixed;
-            bottom: 4em;
-            right: 2em;
-            border-radius: 50%;
+        .container {
+            padding: 25%; 
             cursor: pointer;
-            transition: .5s;
         }
-        .darkmode{
-            --maincolor: #111 ;
-            --secondcolor: #fff;
+        @media only screen and (max-width: 375px) {
+            .container {
+                padding: 10%;
+                margin-top: 20%;
+            }
         }
-
-/* 
-        .card3 {
-            display: grid;
-            grid-template-columns: repeat(2,1 fr);
+        .container h1 {
+            text-align: center;
+            font-family: 'Segoe Script', sans-serif;                                    
         }
-        .card3 p{
-            position: relative;
-            top: -13em ;
-            background-color: #fff;
-            left: 10em ;
-            width: 234px ;
-            text-align: justify;
-            box-shadow: 2px 2px 8px grey ;
-            padding: 1em;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
-        .card3 img {
-            width: 250px;
-        } */
-        p {
-            font-style: italic;
+        li {
+            display: inline-block;
+            padding: 1%;
+            cursor: pointer;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+            display: block;
+            padding: 1px;
+        }
+        li:hover a {
+            background-color: #000;
+            color: #fff;
         }
     </style>
-    <script src="https://kit.fontawesome.com/cf177e01b6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container1">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <h1>"ambition makes u look pretty ugly, kicking, squeling, gucci little piggy"</h1>
-            <p></p>
-        <div class="icon">
-            <a href="https://instagram.com/mqftukhin?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
-            <a href="maftukhinjafarnadwi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://github.com/mqftukhin"><i class="fa-brands fa-github"></i></a>
-            <a href="https://discord.gg/cNZ6XBK6"><i class="fa-brands fa-discord"></i></a>
-        </div>
+    <div class="container">
+        <h1>mqftukhin</h1>
+        as Maftukhin J Nadwi is a digital native and internet surfer, 
+        working and creating projects both collaboratively and independently
+        based on orders with the different output.
+        </br>
+        <p>
+            <ul>
+                <li><a href="project.html">project</a></li>
+                <li><a href="mailto:maftukhinjafarnadwi@gmail.com">contact</a></li>
+                <li><a href="https://github.com/mqftukhin">github</a></li>
+                <li><a href="#">instagram</a></li>
+            </ul>
+        </p>
     </div>
-    <div class="container2">
-        <section id="home">
-            <h1>Home</h1></br></br>
-            <p>Hi, I'm Maftukhin J Nadwi. Actually, i don't know what to fill this portofolio with,
-                bcs i don't know what i've been doing for this fuckin' life.
-            </p>
-            </br>
-            <p> live in a constant state of fear and misery,
-                Here we go again, I'll make jokes about your estrogen.
-                That's pretty much the rest, I'm roasting everything.
-                I'm a weird little entity that'll enter titties
-                And bust all over the tummy and little nippies.
-                I know I'm morbid at times, that's how I like to be.
-                They call my dick a mammoth, you salty, you got a micro-D.
-                Classic penis joke inserted with appropriate timing,
-                Cause if I ain't got a penis line, I ain't dining.
-                No homo, but seriously, I'm getting faded and
-                My life is like my vids, low-budget and under-rated.
-                Kids, the only way to succeed is to chip away at the soul
-                And hope that by the time you get there, you ain't singing.
-            </p>
-            </br></br></br></br></br></br></br></br></br>
-            <p>Work Experience</br><hr></br></p>
-            <P> 2022 - 2023</br>
-                PT Indonesia Epson Industry - 
-                Outgoing Quality Control</br></br>
-                2023 - Present</br>
-                PT Citra Nugerah Karya -
-                Toyota Production System
-            </p>
-        </section>
-        <section id="about">
-            <h1>About</h1>
-                <div class="card1">
-                    <img src="img/tuin.png" alt="Avatar 1">
-                    <p>Back in 2012, I will never forget when Chelsea won the Champions League
-                        for the first time, a day where joy is beyond words. And my heart will
-                        remain blue till the day i die.
-                    </p>   
-                </div>
-                <div class="card2">
-                    <img src="img/tuin.png" alt="Avatar 2">
-                    <p>Sometimes i watch movies, spend time watching series until i get carried
-                    away with the story in my sleep. Danzel Washington and Leonardo DiCaprio they're my idols.
-                    and for director Christopher Nolan he is the best.
-                    </p>
-                </div>
-                <div class="card1">
-                    <img src="img/tuin.png" alt="Avatar 3"></p>
-                    <p>I love The Beatles and Radiohead, their music is magical,
-                        and i also heard music metal, music is my fuckin' best friend, sometimes i got lost
-                        and music brings me back</p>
-                </div>
-        </section>
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et eaque, nihil perferendis ipsam dicta maiores vel inventore odit numquam reiciendis provident sint distinctio ullam minima dolor neque. Eius, eligendi fugit?</p>
-        </section>
-    </div>
-    <button class="btn-darkmode">M</button>
-    
-    <script type="text/javascript">
-        alert('cape anjing !!!');
-        const btnDarkmode = document.querySelector('.btn-darkmode');
-        
-        btnDarkmode.addEventListener('click', () => {
-            document.body.classList.toggle('darkmode');
-
-        });
-    </script>
 </body>
 </html>
